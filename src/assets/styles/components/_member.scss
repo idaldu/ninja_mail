@@ -1,0 +1,33 @@
+.member {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  width: 22.3rem;
+  height: 15.7rem;
+  padding: 2.5rem;
+
+  @media ($desktop) {
+    width: 34.1rem;
+    height: 23.9rem;
+  }
+
+  &__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__title {
+    @include h4();
+    margin-bottom: 0.5rem;
+  }
+
+  &__descr {
+    @include p2($white);
+  }
+}
