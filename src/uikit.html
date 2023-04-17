@@ -1,64 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ui kit</title>
+        <link rel="stylesheet" href="./assets/styles/uikit.scss" />
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ui kit</title>
-  <link rel="stylesheet" href="./assets/styles/uikit.scss" />
-</head>
+    <body style="background-color: lavender">
+        <div class="container">
+            <div class="divider"></div>
+            <div class="ui__title">Логотип</div>
+            <a href="#" class="logo">
+                <img
+                    class="logo__image"
+                    src="/src/assets/images/mail.png"
+                    alt="Logo"
+                />
+                <div class="logo__text">NinjaMail</div>
+            </a>
 
-<body style="background-color: lavender;">
-  <div class="container">
-    <div class="divider"></div>
-    <div class="ui__title">Логотип</div>
-    <a href="#" class="logo">
-      <img class="logo__image" src="/src/assets/images/mail.png" alt="Logo">
-      <div class="logo__text">NinjaMail</div>
-    </a>
+            <div class="ui__title">Заголовки</div>
+            <h1 class="h1">h1 Cost important title</h1>
+            <h2 class="h2">h2 Middle title</h2>
+            <h3 class="h3">h3 Small header</h3>
 
-    <div class="ui__title">Заголовки</div>
-    <h1 class="h1">h1 Cost important title</h1>
-    <h2 class="h2">h2 Middle title</h2>
-    <h3 class="h3">h3 Small header</h3>
+            <div class="divider"></div>
+            <div class="ui__title">Текст</div>
+            <p class="p1">
+                p1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                dolores quo iure, doloribus odit distinctio.
+            </p>
+            <p class="p2">
+                p2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                dolores quo iure, doloribus odit distinctio.
+            </p>
 
-    <div class="divider"></div>
-    <div class="ui__title">Текст</div>
-    <p class="p1">
-      p1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-      dolores quo iure, doloribus odit distinctio.
-    </p>
-    <p class="p2">
-      p2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-      dolores quo iure, doloribus odit distinctio.
-    </p>
+            <div class="divider"></div>
+            <div class="ui__title">Особенность</div>
+            <div class="feature">
+                <img
+                    class="feature__image"
+                    src="/src/assets/images/feature-woman.png"
+                    alt="Woman"
+                />
+                <div class="feature__text">
+                    <p class="feature__descr">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Fugit numquam distinctio corrupti harum modi non.
+                        Assumenda autem eaque mollitia quia.
+                    </p>
+                    <a href="#" class="feature__link">Learn More ></a>
+                </div>
+            </div>
 
-    <div class="divider"></div>
-    <div class="ui__title">Особенность</div>
-    <div class="feature">
-      <img class="feature__image" src="/src/assets/images/feature-woman.png" alt="Woman">
-      <div class="feature__text">
-        <p class="feature__descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit numquam distinctio
-          corrupti harum modi non. Assumenda autem eaque mollitia quia.</p>
-        <a href="#" class="feature__link">Learn More ></a>
-      </div>
-    </div>
+            <div class="divider"></div>
+            <div class="ui__title">Люди</div>
+            <div class="member">
+                <img
+                    class="member__image"
+                    src="/src/assets/images/frankie.jpg"
+                    alt="Man Frankie"
+                />
+                <h4 class="member__title">Elayne</h4>
+                <p class="member__descr">Member since 2018</p>
+            </div>
 
-    <div class="divider"></div>
-    <div class="ui__title">Люди</div>
-    <div class="member">
-      <img class="member__image" src="/src/assets/images/frankie.jpg" alt="Man Frankie">
-      <h4 class="member__title">Elayne</h4>
-      <p class="member__descr">Member since 2018</p>
-    </div>
+            <div class="divider"></div>
+            <div class="ui__title">Кнопки, ссылки</div>
+            <a href="#" class="link">Features</a>
+            <a href="" class="btn btn--dark">Try now</a>
+            <a href="" class="btn btn--border">Get a demo</a>
+            <a href="" class="btn btn--light">Learn now</a>
 
-    <div class="divider"></div>
-    <div class="ui__title">Кнопки, ссылки</div>
-    <a href="#" class="link">Features</a>
-    <a href="" class="btn btn--dark">Try now</a>
-    <a href="" class="btn btn--border">Get a demo</a>
-    <a href="" class="btn btn--light">Learn now</a>
-  </div>
-</body>
-
+            <div class="divider"></div>
+            <div class="ui__title">Поля ввода</div>
+            <form action="/">
+                <input
+                    class="input"
+                    type="email"
+                    placeholder="Enter your email"
+                />
+            </form>
+        </div>
+    </body>
 </html>

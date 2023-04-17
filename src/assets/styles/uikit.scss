@@ -3,37 +3,61 @@
 @import "./layout";
 
 .divider {
-  height: 50px;
+    height: 50px;
 }
 
 .container {
-  max-width: 1150px;
-  padding: 0 1.5rem;
-  margin: auto;
+    max-width: 1150px;
+    padding: 0 1.5rem;
+    margin: auto;
 }
 .ui__title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
-  text-decoration: underline;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    text-decoration: underline;
 }
 
 .h1 {
-  @include h1();
+    @include h1();
 }
 
 .h2 {
-  @include h2();
+    @include h2();
 }
 
 .h3 {
-  @include h3();
+    @include h3();
 }
 
 .p1 {
-  @include p1();
+    @include p1();
 }
 
 .p2 {
-  @include p2();
+    @include p2();
+}
+
+.link {
+    @extend %link;
+}
+
+.btn {
+    @extend %btn;
+}
+
+.btn--dark {
+    @extend %btn--dark;
+}
+
+.btn--border {
+    @extend %btn--border;
+}
+
+.btn--light {
+    @extend %btn--light;
+}
+
+.input {
+    @extend %input;
 }
