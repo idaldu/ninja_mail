@@ -3,19 +3,7 @@
 @import "./layout";
 
 .container {
-    max-width: 1128px;
-    padding: 0 1.5rem;
-    margin: auto;
-}
-
-.container--header {
-    max-width: 1165px;
-}
-
-.btn {
-    @extend %btn;
-}
-
-.btn--dark {
-    @extend %btn--dark;
+  max-width: 1128px;
+  padding: 0 1.5rem;
+  margin: auto;
 }

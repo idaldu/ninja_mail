@@ -1,196 +1,196 @@
 @mixin h1($color: $darkColor) {
-    font-size: 3.6rem;
-    color: $color;
-    font-weight: 900;
-    margin-bottom: 9.8rem;
-    line-height: 46px;
+  font-size: 3.6rem;
+  color: $color;
+  font-weight: 900;
+  margin-bottom: 9.8rem;
+  line-height: 46px;
 
-    @media ($tablet) {
-        font-size: 3.8rem;
-        margin-bottom: 1.7rem;
-    }
+  @media ($tablet) {
+    font-size: 3.8rem;
+    margin-bottom: 1.7rem;
+  }
 
-    @media ($desktop) {
-        font-size: 5.9rem;
-        line-height: 71px;
-        margin-bottom: 2.3rem;
-    }
+  @media ($desktop) {
+    font-size: 5.9rem;
+    line-height: 71px;
+    margin-bottom: 2.3rem;
+  }
 }
 
 @mixin h2($color: $darkColor) {
-    font-size: 2.2rem;
-    color: $color;
-    font-weight: 900;
-    margin-bottom: 2rem;
-    line-height: 29px;
+  font-size: 2.2rem;
+  color: $color;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  line-height: 29px;
 
-    @media ($tablet) {
-        font-size: 3.8rem;
-        line-height: 51px;
-        margin-bottom: 4rem;
-    }
+  @media ($tablet) {
+    font-size: 3.8rem;
+    line-height: 51px;
+    margin-bottom: 4rem;
+  }
 
-    @media ($desktop) {
-        font-size: 6rem;
-        line-height: 80px;
-        margin-bottom: 6rem;
-    }
+  @media ($desktop) {
+    font-size: 6rem;
+    line-height: 80px;
+    margin-bottom: 6rem;
+  }
 }
 
 @mixin h3($color: $darkColor) {
-    font-size: 2.8rem;
-    color: $color;
-    font-weight: 900;
-    margin-bottom: 1.7rem;
-    line-height: 31px;
+  font-size: 2.8rem;
+  color: $color;
+  font-weight: 900;
+  margin-bottom: 1.7rem;
+  line-height: 31px;
 
-    @media ($desktop) {
-        font-size: 4.4rem;
-        line-height: 48px;
-        margin-bottom: 2.4rem;
-    }
+  @media ($desktop) {
+    font-size: 4.4rem;
+    line-height: 48px;
+    margin-bottom: 2.4rem;
+  }
 }
 
 @mixin h4($color: $white) {
-    font-weight: 900;
-    font-size: 2.2rem;
-    line-height: 26px;
-    color: $color;
+  font-weight: 900;
+  font-size: 2.2rem;
+  line-height: 26px;
+  color: $color;
 
-    @media ($desktop) {
-        font-size: 3.4rem;
-        line-height: 40px;
-    }
+  @media ($desktop) {
+    font-size: 3.4rem;
+    line-height: 40px;
+  }
 }
 
 @mixin p1($color: $darkColor) {
-    font-weight: 500;
-    font-size: 1.2rem;
-    color: $color;
-    line-height: 16px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: $color;
+  line-height: 16px;
 
-    @media ($desktop) {
-        font-size: 1.9rem;
-        line-height: 26px;
-    }
+  @media ($desktop) {
+    font-size: 1.9rem;
+    line-height: 26px;
+  }
 }
 
 @mixin p2($color: $darkColor) {
-    font-weight: 700;
-    font-size: 1.2rem;
-    line-height: 14px;
-    color: $color;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 14px;
+  color: $color;
 
-    @media ($desktop) {
-        font-size: 1.9rem;
-        line-height: 22px;
-    }
+  @media ($desktop) {
+    font-size: 1.9rem;
+    line-height: 22px;
+  }
 }
 
 %btn {
-    display: inline-block;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 900;
-    cursor: pointer;
-    padding: 1.3rem 0;
-    min-width: 14.3rem;
-    font-size: 1.3rem;
-    line-height: 15px;
-    letter-spacing: 0.65px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  cursor: pointer;
+  padding: 1.3rem 0;
+  min-width: 14.3rem;
+  font-size: 1.3rem;
+  line-height: 15px;
+  letter-spacing: 0.65px;
 
-    @media ($desktop) {
-        padding: 2rem 0;
-        min-width: 20rem;
-        letter-spacing: 1.05px;
-        font-size: 2.1rem;
-        line-height: 25px;
-    }
+  @media ($desktop) {
+    padding: 2rem 0;
+    min-width: 20rem;
+    letter-spacing: 1.05px;
+    font-size: 2.1rem;
+    line-height: 25px;
+  }
 }
 
 %btn--dark {
-    background-color: $accentColor;
-    color: $white;
+  background-color: $accentColor;
+  color: $white;
 }
 
 %btn--border {
-    background-color: $white;
-    color: $accentColor;
-    border: 3px solid $accentColor;
+  background-color: $white;
+  color: $accentColor;
+  border: 3px solid $accentColor;
 }
 
 %btn--light {
-    color: $accentColor;
-    background-color: $white;
-    padding: 0.7rem 0;
-    min-width: 6.5rem;
-    font-size: 0.6rem;
-    line-height: 7px;
-    letter-spacing: 0.3px;
+  color: $accentColor;
+  background-color: $white;
+  padding: 0.7rem 0;
+  min-width: 6.5rem;
+  font-size: 0.6rem;
+  line-height: 7px;
+  letter-spacing: 0.3px;
 
-    @media ($tablet) {
-        padding: 1.3rem 0;
-        min-width: 13.2rem;
-        font-size: 1.3rem;
-        line-height: 15px;
-        letter-spacing: 0.65px;
-    }
-
-    @media ($desktop) {
-        padding: 2rem 0;
-        min-width: 20rem;
-        letter-spacing: 1.05px;
-        font-size: 2.1rem;
-        line-height: 25px;
-    }
-}
-
-%link {
-    font-family: "Raleway";
-    font-weight: 800;
-    cursor: pointer;
-    font-size: 17px;
-    text-transform: uppercase;
-    font-size: 11px;
-    line-height: 13px;
-    letter-spacing: 0.825px;
-    padding-bottom: 0.3rem;
-    border-bottom: 0.3rem solid $accentColor;
-
-    @media ($desktop) {
-        font-size: 17px;
-        line-height: 20px;
-        letter-spacing: 1.275px;
-        border-bottom: 0.5rem solid $accentColor;
-        padding-bottom: 0.6rem;
-    }
-}
-
-%input {
-    background: $white;
-    color: $darkColor;
-    border: 1px solid #9f9f9f;
-    border-radius: 5px;
-    padding: 1.4rem;
-    width: 22.3rem;
-    font-weight: 500;
+  @media ($tablet) {
+    padding: 1.3rem 0;
+    min-width: 13.2rem;
     font-size: 1.3rem;
     line-height: 15px;
     letter-spacing: 0.65px;
+  }
 
-    &::placeholder {
-        color: $darkColor;
-    }
+  @media ($desktop) {
+    padding: 2rem 0;
+    min-width: 20rem;
+    letter-spacing: 1.05px;
+    font-size: 2.1rem;
+    line-height: 25px;
+  }
+}
 
-    @media ($tablet) {
-        width: 27.5rem;
-    }
+%link {
+  font-family: "Raleway";
+  font-weight: 800;
+  cursor: pointer;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 10px;
+  letter-spacing: 0.825px;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.3rem solid $accentColor;
 
-    @media ($desktop) {
-        width: 42rem;
-        font-size: 2.1rem;
-        line-height: 25px;
-        letter-spacing: 1.05px;
-        padding: 2rem;
-    }
+  @media ($desktop) {
+    font-size: 17px;
+    line-height: 13px;
+    letter-spacing: 1.275px;
+    border-bottom: 0.5rem solid $accentColor;
+    padding-bottom: 0.6rem;
+  }
+}
+
+%input {
+  background: $white;
+  color: $darkColor;
+  border: 1px solid #9f9f9f;
+  border-radius: 5px;
+  padding: 1.4rem;
+  width: 22.3rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 15px;
+  letter-spacing: 0.65px;
+
+  &::placeholder {
+    color: $darkColor;
+  }
+
+  @media ($tablet) {
+    width: 27.5rem;
+  }
+
+  @media ($desktop) {
+    width: 42rem;
+    font-size: 2.1rem;
+    line-height: 25px;
+    letter-spacing: 1.05px;
+    padding: 2rem;
+  }
 }

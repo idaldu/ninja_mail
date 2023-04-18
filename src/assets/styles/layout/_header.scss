@@ -1,14 +1,50 @@
-.header__container {
+.header {
+  padding: 3rem 0;
+
+  &__container {
+    max-width: 1165px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
 }
 
-.nav__list {
+.nav {
+  &__list {
     display: flex;
     align-items: center;
-}
+  }
 
-.nav__list-link {
+  &__item {
+    &:not(:last-child) {
+      margin-right: 2.4rem;
+    }
+  }
+
+  &__link {
     @extend %link;
+  }
+
+  &__btn {
+    color: $white;
+    background-color: $accentColor;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 0.6rem 0;
+    min-width: 11rem;
+    font-size: 1.1rem;
+    line-height: 13px;
+    letter-spacing: 0.825px;
+
+    @media ($desktop) {
+      padding: 1.1rem 0;
+      min-width: 16.8rem;
+      letter-spacing: 1.275px;
+      font-size: 1.7rem;
+      line-height: 20px;
+    }
+  }
 }
