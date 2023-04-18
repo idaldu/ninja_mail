@@ -1,0 +1,49 @@
+.hero {
+    &__container {
+        position: relative;
+    }
+
+    &__content {
+        z-index: 100;
+
+        @media ($tablet) {
+          max-width: ;
+        }
+    }
+
+    &__title {
+        @include h1();
+    }
+
+    &__descr {
+        @include p1();
+    }
+
+    &__link {
+        @extend %btn;
+    }
+
+    &__link--dark {
+        @extend %btn--dark;
+    }
+
+    &__link--border {
+        @extend %btn--border;
+    }
+
+    &__image {
+        position: absolute;
+        right: 0;
+        top: 0;
+        max-width: 30rem;
+        z-index: -100;
+
+        @media ($tablet) {
+            max-width: 44.5rem;
+        }
+
+        @media ($desktop) {
+            max-width: 68rem;
+        }
+    }
+}
