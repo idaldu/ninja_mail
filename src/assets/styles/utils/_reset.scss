@@ -1,30 +1,31 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html,
 body,
 input {
-    font-size: 10px;
-    font-family: $mainFont;
+  font-size: 10px;
+  font-family: $mainFont;
 }
 
 h1,
 h2,
 h3 {
-    font-family: $headerFont;
+  font-family: $headerFont;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: $darkColor;
-    cursor: pointer;
+  text-decoration: none;
+  color: $darkColor;
+  cursor: pointer;
 }
 
 ul,

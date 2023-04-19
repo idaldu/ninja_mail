@@ -3,7 +3,15 @@
 @import "./layout";
 
 .container {
-  max-width: 1128px;
-  padding: 0 1.5rem;
+  max-width: 1118px;
+  padding: 0 1rem;
   margin: auto;
+
+  @media ($tablet) {
+    padding: 0 2.9rem;
+  }
+
+  @media ($desktop) {
+    padding: 0 1rem;
+  }
 }
