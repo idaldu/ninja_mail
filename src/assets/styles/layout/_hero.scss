@@ -4,6 +4,11 @@
   padding-bottom: 1.8rem;
   overflow: hidden;
 
+  @media ($tablet) {
+    padding-top: 6.7rem;
+    padding-bottom: 9.7rem;
+  }
+
   @media ($desktop) {
     padding-top: 10.3rem;
     padding-bottom: 14.9rem;
@@ -96,18 +101,63 @@
 
     @media ($desktop) {
       max-width: 68rem;
+      right: 1rem;
     }
   }
 
   &__circle-1 {
-    @include circle();
-    top: -1%;
-    left: 2%;
+    display: none;
+
+    @media ($desktop) {
+      @include circle();
+      display: block;
+      left: -13.3rem;
+      top: -1rem;
+    }
   }
 
   &__circle-2 {
-    @include circle();
-    bottom: 25%;
-    left: -3%;
+    display: none;
+
+    @media ($tablet) {
+      @include circle(0.7rem);
+      display: block;
+      left: 1rem;
+      bottom: 6rem;
+    }
+
+    @media ($desktop) {
+      @include circle();
+      left: -3rem;
+      bottom: 8rem;
+    }
+  }
+
+  &__circle-3 {
+    display: none;
+
+    @media ($tablet) {
+      @include circle();
+      display: block;
+      left: 36rem;
+      bottom: -7rem;
+    }
+
+    @media ($desktop) {
+      @include circle(1.5rem);
+      left: 53rem;
+      bottom: -13rem;
+    }
+  }
+
+  &__circle-4 {
+    display: none;
+
+    @media ($desktop) {
+      @include circle();
+      display: block;
+      right: -8rem;
+      top: -7rem;
+    }
   }
 }
