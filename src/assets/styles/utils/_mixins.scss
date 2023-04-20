@@ -106,6 +106,7 @@
   font-size: 1.3rem;
   line-height: 15px;
   letter-spacing: 0.65px;
+  border: none;
 
   @media ($tablet) {
     width: 13.1rem;
@@ -135,14 +136,14 @@
   color: $accentColor;
   background-color: $white;
   padding: 0.7rem 0;
-  min-width: 6.5rem;
+  width: 6.5rem;
   font-size: 0.6rem;
   line-height: 7px;
   letter-spacing: 0.3px;
 
   @media ($tablet) {
     padding: 1.3rem 0;
-    min-width: 13.2rem;
+    width: 13.2rem;
     font-size: 1.3rem;
     line-height: 15px;
     letter-spacing: 0.65px;
@@ -150,7 +151,7 @@
 
   @media ($desktop) {
     padding: 2rem 0;
-    min-width: 20rem;
+    width: 20rem;
     letter-spacing: 1.05px;
     font-size: 2.1rem;
     line-height: 25px;

@@ -1,17 +1,35 @@
 .learning {
+  width: 100%;
   position: relative;
   background-color: rgba(247, 247, 247, 0.8);
-  z-index: -200;
+  padding-top: 2.3rem;
+  padding-bottom: 3.3rem;
+
+  @media ($tablet) {
+    padding-top: 8.5rem;
+    padding-bottom: 6.4rem;
+  }
+
+  @media ($desktop) {
+    padding-top: 13rem;
+    padding-bottom: 9.8rem;
+  }
 
   &__content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 100;
   }
 
   &__title {
     @include h2($white);
-    margin: 0 auto;
+    white-space: nowrap;
   }
 
   &__button {
@@ -23,8 +41,10 @@
   }
 
   &__video {
+    display: block;
     width: 30.4rem;
-    z-index: -100;
+    margin: 0 auto;
+    z-index: -1;
 
     @media ($tablet) {
       width: 61.6rem;
