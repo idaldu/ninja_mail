@@ -1,29 +1,29 @@
 .logo {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 
-  &__image {
-    width: 4rem;
-    height: 2rem;
-    object-fit: cover;
-    object-position: center;
-    margin-right: 1.1rem;
+	&__image {
+		width: 4rem;
+		height: 2rem;
+		object-fit: cover;
+		object-position: center;
+		margin-right: 1.1rem;
 
-    @media ($desktop) {
-      width: 6rem;
-      height: 3rem;
-      margin-right: 1.4rem;
-    }
-  }
+		@media ($desktop) {
+			width: 6rem;
+			height: 3rem;
+			margin-right: 1.4rem;
+		}
+	}
 
-  &__text {
-    font-size: 2.2rem;
-    line-height: 26px;
-    font-weight: 900;
+	&__text {
+		font-size: 2.2rem;
+		line-height: 26px;
+		font-weight: 900;
 
-    @media ($desktop) {
-      font-size: 3.5rem;
-      line-height: 41px;
-    }
-  }
+		@media ($desktop) {
+			font-size: 3.5rem;
+			line-height: 41px;
+		}
+	}
 }
