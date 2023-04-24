@@ -1,0 +1,50 @@
+.features {
+  @media ($tablet) {
+    height: 34.8rem;
+  }
+
+  @media ($desktop) {
+    height: 53.3rem;
+  }
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media ($tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .feature {
+      margin-right: 3rem;
+
+      &:nth-child(1) {
+        align-self: start;
+      }
+
+      &:nth-child(2) {
+        align-self: end;
+      }
+    }
+  }
+
+  &__text {
+    max-width: 23.2rem;
+
+    @media ($desktop) {
+      max-width: 36.5rem;
+    }
+  }
+
+  &__title {
+    @include h3();
+  }
+
+  &__descr {
+    @include p1();
+  }
+}

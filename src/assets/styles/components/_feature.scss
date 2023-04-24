@@ -1,46 +1,53 @@
 .feature {
-	display: flex;
-	flex-direction: column;
-	width: 20.9rem;
-	background-color: $white;
+  display: flex;
+  flex-direction: column;
+  width: 20.9rem;
+  background-color: $white;
+  min-height: 29rem;
 
-	@media ($desktop) {
-		width: 32rem;
-	}
+  @media ($desktop) {
+    min-height: 44.5rem;
+    width: 32rem;
+  }
 
-	&__image {
-		width: 100%;
-		object-fit: cover;
-		object-position: center;
-	}
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-height: 16.2rem;
 
-	&__text {
-		padding: 1.6rem 1.9rem;
+    @media ($desktop) {
+      max-height: 25.5rem;
+    }
+  }
 
-		@media ($desktop) {
-			padding: 2.6rem 3rem;
-		}
-	}
+  &__text {
+    padding: 1.3rem 1.9rem;
 
-	&__descr {
-		@include p1();
-		margin-bottom: 1rem;
+    @media ($desktop) {
+      padding: 2.2rem 3rem;
+    }
+  }
 
-		@media ($desktop) {
-			font-size: 1.6rem;
-			line-height: 26px;
-		}
-	}
+  &__descr {
+    @include p1();
+    margin-bottom: 1rem;
 
-	&__link {
-		font-weight: 800;
-		color: $accentColor;
-		font-size: 1.2rem;
-		line-height: 14px;
+    @media ($desktop) {
+      font-size: 1.6rem;
+      line-height: 26px;
+    }
+  }
 
-		@media ($desktop) {
-			font-size: 1.6rem;
-			line-height: 19px;
-		}
-	}
+  &__link {
+    font-weight: 800;
+    color: $accentColor;
+    font-size: 1.2rem;
+    line-height: 14px;
+
+    @media ($desktop) {
+      font-size: 1.6rem;
+      line-height: 19px;
+    }
+  }
 }
