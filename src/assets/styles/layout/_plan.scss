@@ -1,0 +1,19 @@
+.plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $accentColor;
+  padding: 4.5rem 0 5.9rem;
+
+  @media ($desktop) {
+    padding: 8.2rem 0 9.5rem;
+  }
+
+  &__title {
+    @include h2($white);
+  }
+
+  &__link {
+    @extend %btn;
+  }
+}

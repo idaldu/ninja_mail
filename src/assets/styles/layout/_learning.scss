@@ -36,10 +36,6 @@
     @extend %btn;
   }
 
-  &__button--light {
-    @extend %btn--light;
-  }
-
   &__video {
     display: block;
     width: 30.4rem;

@@ -134,19 +134,18 @@
   border: 3px solid $accentColor;
 }
 
-%btn--light {
+.btn--light {
   color: $accentColor;
   background-color: $white;
-  padding: 0.7rem 0;
-  width: 6.5rem;
-  font-size: 0.6rem;
-  line-height: 7px;
+  padding: 1.3rem 0;
+  width: 13.2rem;
+  font-size: 1.3rem;
+  line-height: 15px;
   letter-spacing: 0.3px;
 
   @media ($tablet) {
     padding: 1.3rem 0;
     width: 13.2rem;
-    font-size: 1.3rem;
     line-height: 15px;
     letter-spacing: 0.65px;
   }

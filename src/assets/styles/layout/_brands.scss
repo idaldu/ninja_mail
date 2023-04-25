@@ -1,55 +1,77 @@
 .brands {
+  margin-bottom: 5.8rem;
+
+  @media ($tablet) {
+    margin-bottom: 9.5rem;
+  }
+
+  @media ($desktop) {
+    margin-bottom: 14.6rem;
+  }
+
   &__container {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 1rem;
 
     @media ($tablet) {
-      max-width: 61.7rem;
+      max-width: 62.7rem;
     }
 
     @media ($desktop) {
-      max-width: 94.4rem;
+      max-width: 95.4rem;
     }
   }
 
   &__title {
     @include h3();
+    margin-bottom: 3.4rem;
+    width: 50%;
+    text-align: center;
+
+    @media ($desktop) {
+      margin-bottom: 6rem;
+    }
   }
 
   &__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 4rem;
+    row-gap: 2.9rem;
 
     @media ($tablet) {
-      max-height: 3.1rem;
-      flex-wrap: nowrap;
-    }
-
-    @media ($desktop) {
-      max-height: 4.8rem;
+      grid-template-columns: repeat(5, auto);
+      column-gap: 4rem;
+      row-gap: 0;
     }
   }
 
   &__list-item {
-    &:not(:last-child) {
-      @media ($tablet) {
-        margin-right: 4.1rem;
-      }
+    display: flex;
+    justify-content: center;
+    grid-column: 1 span;
+    height: 4.8rem;
 
-      @media ($desktop) {
-        margin-right: 6.4rem;
+    &:last-child {
+      grid-column: 2 span;
+
+      @media ($tablet) {
+        grid-column: unset;
       }
+    }
+
+    @media ($tablet) {
+      grid-column: unset;
     }
   }
 
   &__img {
-    height: 100%;
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
     object-position: center;
   }
